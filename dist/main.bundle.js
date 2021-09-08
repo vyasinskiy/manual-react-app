@@ -1,0 +1,1 @@
+(()=>{const e=document.createElement("h1");e.textContent="JS is connected to HTML and insert this H!!",document.querySelector("#root").append(e)})();
