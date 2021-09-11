@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const path = require('path');
 const paths = {
@@ -30,6 +31,7 @@ module.exports = {
             filename: 'index.html', // name of output file
         }),
         new webpack.HotModuleReplacementPlugin(), // no need to reload page
+        new CleanWebpackPlugin(),
     ],
     module: {
         rules: [
