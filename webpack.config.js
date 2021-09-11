@@ -17,7 +17,7 @@ module.exports = {
         port: 8080,
     },
     entry: {
-        main: path.resolve(__dirname, './src/index.ts'),
+        main: path.resolve(__dirname, './src/index.tsx'),
 	},
 	output: {
         path: paths.dist,
@@ -39,7 +39,7 @@ module.exports = {
                 use: ['babel-loader'], // transpile new es6+ to es5
             },
             {
-                test: /\.ts$/,
+                test: /\.tsx?$/,
                 loader: 'ts-loader'
             }
         ],
