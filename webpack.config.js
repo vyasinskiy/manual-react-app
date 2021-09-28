@@ -45,5 +45,8 @@ module.exports = {
                 loader: 'ts-loader'
             }
         ],
-    }
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js', '.json'], // order of searching file extensons
+    },
 }
