@@ -1,9 +1,6 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { Clock } from './components/clock';
-import { Toggle } from './components/toggle';
 
-class WarnngPannel extends React.Component<{}, {showWarning: Boolean}> {
+export class WarningPannel extends React.Component<{}, {showWarning: Boolean}> {
     constructor(props) {
       super(props);
       this.state = { showWarning: true }
@@ -40,12 +37,3 @@ class WarningBanner extends React.Component<{warn: Boolean}, {}> {
         );
     }
 }
-
-ReactDOM.render(
-    <>
-        <WarnngPannel />
-        <Clock />
-        <Toggle />
-    </>,
-    document.getElementById('root')
-);

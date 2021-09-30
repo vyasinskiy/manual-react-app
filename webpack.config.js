@@ -18,7 +18,7 @@ module.exports = {
         port: 8080,
     },
     entry: {
-        main: path.resolve(__dirname, './src/index.tsx'),
+        main: path.resolve(__dirname, './src/index.ts'),
 	},
 	output: {
         path: paths.dist,
